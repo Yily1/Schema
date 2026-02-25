@@ -1,21 +1,10 @@
 
+START TRANSACTION;
 
+SET FOREIGN_KEY_CHECKS = 0;
 
+DROP TABLE IF EXISTS `admin_chicken`;
 
+SET FOREIGN_KEY_CHECKS = 1;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+COMMIT;
