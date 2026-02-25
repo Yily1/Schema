@@ -1,0 +1,26 @@
+START TRANSACTION;
+
+CREATE TABLE users (
+    user_id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    date_date DATE DEFAULT CURRENT_DATE
+) ;
+
+
+CREATE TABLE chickens (
+    chicken_id INT AUTO_INCREMENT PRIMARY KEY,
+    age INT,
+    date_date  DATE DEFAULT CURRENT_DATE
+);
+
+
+CREATE TABLE user_logs (
+    log_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    chicken_id INT,
+    log_date DATE DEFAULT CURRENT_DATE,
+    FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (chicken_id) REFERENCES chickens(chicken_id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+COMMIT;
