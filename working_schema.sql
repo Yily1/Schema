@@ -7,6 +7,7 @@ CREATE TABLE users (
 ) ;
 
 
+
 CREATE TABLE chickens (
     chicken_id INT AUTO_INCREMENT PRIMARY KEY,
     age INT,
