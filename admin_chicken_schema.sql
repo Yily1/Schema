@@ -1,0 +1,7 @@
+
+CREATE TABLE IF NOT EXISTS chickens (
+    chicken_id INT AUTO_INCREMENT PRIMARY KEY,
+    age INT,
+    date_added DATE DEFAULT CURRENT_DATE
+);
+
