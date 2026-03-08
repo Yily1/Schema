@@ -2,14 +2,14 @@
 CREATE TABLE IF NOT EXISTS users (
     user_id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) NOT NULL,
-    date_date DATE DEFAULT CURRENT_DATE
+    date_added DATE DEFAULT CURRENT_DATE
 ) ;
 
 
 CREATE TABLE IF NOT EXISTS chickens (
     chicken_id INT AUTO_INCREMENT PRIMARY KEY,
     age INT,
-    date_date  DATE DEFAULT CURRENT_DATE
+    date_added DATE DEFAULT CURRENT_DATE
 );
 
 
